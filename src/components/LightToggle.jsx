@@ -1,6 +1,7 @@
 import React, { useReducer } from "react";
 import "../App.css";
 import MoodSwitcher from "./MoodSwitcher";
+import FontSizeAdjuster from "./FontSizeAdjuster";
 
 const initialState = {
   isOn: false,
@@ -31,6 +32,7 @@ const LightToggle = () => {
         style={{ background: state.isOn ? "yellow" : "#ccc" }}
       >
           <MoodSwitcher/>
+          <FontSizeAdjuster/>
         <h3>Click Toggle Button And Switch Mode</h3>
         <h1>{state.isOn ? "Yellow" : "Grey"} Mode</h1>
         <button onClick={() => dispatch({ type: "TOGGLE" })}>Toggle</button>
