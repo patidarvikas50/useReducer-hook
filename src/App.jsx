@@ -1,7 +1,8 @@
 import './App.css'
-import LightToggle from './components/LightToggle'
+// import LightToggle from './components/LightToggle'
 // import Counter from './components/Counter'
 // import TodoList from './components/TodoList'
+import BackgroundColorChanger from './components/BackgroundColorChanger';
 
 function App() {
  
@@ -10,7 +11,8 @@ function App() {
     <>
      {/* <Counter/>
      <TodoList/> */}
-     <LightToggle/>
+     {/* <LightToggle/> */}
+     <BackgroundColorChanger/>
     </>
   )
 }
